@@ -23,7 +23,7 @@ import java.util.Arrays;
  * 可以有默认方法(default) 有方法体,
  * 可以有Object的public方法
  */
-@Component
+//@Component
 //@Order(2)
 public class MyCommandLineRunner2 implements CommandLineRunner {
 
@@ -48,7 +48,7 @@ public class MyCommandLineRunner2 implements CommandLineRunner {
      */
     //@Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-        return args -> {
+        return args -> { // args是CommandLineRunner接口中的方法的参数
             String[] beanNames =  ctx.getBeanDefinitionNames();
             Arrays.sort(beanNames);
             for (String beanName : beanNames) {
