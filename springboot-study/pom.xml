@@ -30,10 +30,32 @@
             <scope>test</scope>
         </dependency>
 
+        <!--SpringBoot 默认使用yml或properties格式配置文件，如果要使用其它类型的格式，比如xml，则需要这个。
+        通过@PropertySource(value = "classpath:config/test.xml")来配置-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
+        </dependency>
+
+        <!--jdbc，通过spring的JdbcTemplate 连接数据库-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <!--mysql-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!--druid连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.9</version>
         </dependency>
 
     </dependencies>
