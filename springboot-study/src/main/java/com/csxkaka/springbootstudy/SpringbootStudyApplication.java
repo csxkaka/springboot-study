@@ -1,7 +1,9 @@
 package com.csxkaka.springbootstudy;
 
+import com.csxkaka.springbootstudy.beans.ConfigBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 // springboot启动类
 @SpringBootApplication
