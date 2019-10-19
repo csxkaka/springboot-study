@@ -6,6 +6,16 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/springboot?serverTimezone=GMT
+    url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&serverTimezone=GMT
     username: root
     password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update  #第一次建表使用create，后面必须改为update，否则每次执行都会先删除表再建表
+
+beetlsql:
+  sqlPath: /sql
+  basePackage: com.csxkaka.springbootstudy.beetl
+beetl-beetlsql:
+  dev: true
