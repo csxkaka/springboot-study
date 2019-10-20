@@ -1,7 +1,6 @@
 package com.csxkaka.springbootstudy.mybatis.dao;
 
 import org.apache.ibatis.annotations.*;
-import org.springframework.stereotype.Repository;
 
 /**
  * 使用xml映射文件写sql，不添加@Mapper注解，

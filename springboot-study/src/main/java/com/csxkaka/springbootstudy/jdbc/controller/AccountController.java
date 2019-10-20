@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * SpringBoot 整合jdbc
+ * 通过JdbcTemplate连接数据库
+ */
 @RestController
 @RequestMapping("/account/jdbc")
 public class AccountController {

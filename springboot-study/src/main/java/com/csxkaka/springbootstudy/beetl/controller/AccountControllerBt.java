@@ -8,6 +8,16 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * SpringBoot 集成beetl
+ *  1.添加依赖
+ *  2.配置数据源，像mybatis这种，只要在配置文件配置就可以连接数据库，但beetl还不能，
+ *    需要配置一个DataSource bean
+ *  3.在配置文件配置 beetlsql.sqlPath 和basePackage
+ *  3.创建实体
+ *  4.在dao层添加注解@SqlResource()指明该dao层对应的sql文件名
+ *  5.dao集成BaseMapper<T>，实体类添加@Table(name="")，如果和表名一致可不写
+ */
 @Controller
 @RequestMapping("/account/beetl")
 public class AccountControllerBt {

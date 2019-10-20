@@ -1,9 +1,7 @@
 package com.csxkaka.springbootstudy.mybatis.controller;
 
 import com.csxkaka.springbootstudy.mybatis.dao.AccountMyDao;
-import com.csxkaka.springbootstudy.mybatis.dao.AccountMyDao2;
 import com.csxkaka.springbootstudy.mybatis.entity.AccountMy;
-import com.csxkaka.springbootstudy.mybatis.service.AccountMyService2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

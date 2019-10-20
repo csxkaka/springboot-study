@@ -9,6 +9,9 @@ spring:
     url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&serverTimezone=GMT
     username: root
     password: root
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/mymongodb
 
   jpa:
     hibernate:
@@ -23,3 +26,5 @@ beetl-beetlsql:
 mybatis:
   type-aliases-package: com.csxkaka.springbootstudy.mybatis.entity
   mapper-locations: classpath:mybatis/*.xml
+
+
