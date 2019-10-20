@@ -19,3 +19,7 @@ beetlsql:
   basePackage: com.csxkaka.springbootstudy.beetl
 beetl-beetlsql:
   dev: true
+
+mybatis:
+  type-aliases-package: com.csxkaka.springbootstudy.mybatis.entity
+  mapper-locations: classpath:mybatis/*.xml
