@@ -127,6 +127,7 @@
                             <sourceDocumentName>index.adoc</sourceDocumentName>
                             <backend>html</backend>
                             <attributes>
+                                <!--根据snippets目录下的.adoc文件生成对应的接口文档-->
                                 <snippets>${project.build.directory}/snippets</snippets>
                             </attributes>
                         </configuration>

@@ -42,6 +42,7 @@ public class RestdocTest {
      *      adoc文件有一定的格式，具体参考文档
      *
      *      测试完后，打包即可，如果打包失败，把其他通过MockMvc的测试类注释再打包试试
+     *      打包完后在target目录下会生产一个generated-docs目录，该目录下有一个index.html接口文档文件
      * @throws Exception
      */
     @Test
