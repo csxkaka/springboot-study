@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @RestController = @Controller + @ResponseBody
  */
-@RestController
+@RestController("/hello")
 @EnableConfigurationProperties({ConfigBean.class,User.class})
 public class HelloController {
 
@@ -28,7 +28,7 @@ public class HelloController {
     @Value("${my.age}")
     private Integer age;
 
-    @RequestMapping
+    @RequestMapping("")
     public String hello() {
         return "Hello Spring Boot";
     }
