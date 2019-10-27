@@ -12,6 +12,9 @@ import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
 
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * 集成Redis消息队列
+ */
 //@Configuration
 public class RedisListenerConfiguration {
 
