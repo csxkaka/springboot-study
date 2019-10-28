@@ -32,6 +32,12 @@
             <scope>test</scope>
         </dependency>
 
+        <!--继承thymeleaf-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
         <!--SpringBoot 默认使用yml或properties格式配置文件，如果要使用其它类型的格式，比如xml，则需要这个。
         通过@PropertySource(value = "classpath:config/test.xml")来配置-->
         <dependency>

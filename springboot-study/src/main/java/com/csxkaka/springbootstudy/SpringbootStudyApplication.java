@@ -1,12 +1,15 @@
 package com.csxkaka.springbootstudy;
 
+import com.csxkaka.springbootstudy.upload.storage.StorageProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cache.annotation.EnableCaching;
 
 // springboot启动类
 @SpringBootApplication
 @EnableCaching
+@EnableConfigurationProperties(StorageProperties.class)
 public class SpringbootStudyApplication {
 
     public static void main(String[] args) {

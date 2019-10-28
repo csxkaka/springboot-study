@@ -29,6 +29,10 @@ spring:
         max-wait: -1   #连接阻塞时间，负值表示不限制
         max-idle: 8
     timeout: 2000  #连接超时时间
+  http:
+    multipart:
+      max-file-size: 10
+      max-request-size: 10
 
 beetlsql:
   sqlPath: /sql
