@@ -1,0 +1,9 @@
+server:
+  port: 8091
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka/ #指向服务注册中心
+spring:
+  application:
+    name: eureka-client #给实例取一个名字
